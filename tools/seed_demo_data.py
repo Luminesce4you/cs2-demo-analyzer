@@ -5,7 +5,7 @@
     set CS2_PANEL_DATA_DIR=数据_预览   (PowerShell: $env:CS2_PANEL_DATA_DIR="数据_预览")
     python -m app.main
 
-合成数据里 steamid 76561198000000001（Alpha）是「我」，状态随场次逐渐上升。
+合成数据里 steamid 90000000000000001（Alpha）是「我」，状态随场次逐渐上升。
 生成的 demo 文件只有几个字节，回放页会提示无法解码 —— 这是预期行为。
 """
 from __future__ import annotations

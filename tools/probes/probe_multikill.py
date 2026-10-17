@@ -1,8 +1,8 @@
 import sys, bisect
-sys.path.insert(0, r"D:\dsh工作区1\cs2-demo-analyzer")
+sys.path.insert(0, r"<项目根目录>")
 from awpy import Demo
 from app import metrics, parser
-DEMO = r"D:\Steam\steamapps\common\Counter-Strike Global Offensive\game\csgo\replays\match730_003831016083200933917_0573296683_401.dem"
+DEMO = r"D:\Steam\steamapps\common\Counter-Strike Global Offensive\game\csgo\replays\example.dem"
 d = Demo(DEMO)
 rounds = parser.records(d.rounds)
 kills = parser.records(d.kills)

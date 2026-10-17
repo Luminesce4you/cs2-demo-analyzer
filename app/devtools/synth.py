@@ -24,7 +24,8 @@ TICK_RATE = 64
 
 
 def steamid(i: int) -> str:
-    return str(76561198000000000 + i)
+    # 故意不用 7656119 开头：真实 SteamID64 都是这个前缀，合成数据不能和真实账号撞号
+    return str(90000000000000000 + i)
 
 
 def make_match(seed: int = 1, map_name: str = "de_mirage", skill_a: float = 1.0, skill_b: float = 1.0,

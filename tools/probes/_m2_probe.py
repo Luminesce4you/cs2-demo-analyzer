@@ -1,7 +1,7 @@
 
 import json, sqlite3, sys
 sys.stdout.reconfigure(encoding="utf-8")
-conn = sqlite3.connect(r"D:\dsh工作区1\cs2-demo-analyzer\数据\panel.db")
+conn = sqlite3.connect(r"<项目根目录>\数据\panel.db")
 conn.row_factory = sqlite3.Row
 ms = conn.execute("SELECT id,file_name,map_name,ct_score,t_score,round_count,file_size FROM matches").fetchall()
 print("MATCHES", len(ms))

@@ -6,9 +6,9 @@ shape: (3, 19)
 │ str       ┆ i32   ┆ i32    ┆ i32     ┆   ┆ ---         ┆ ---         ┆ ---         ┆ ---         │
 │           ┆       ┆        ┆         ┆   ┆ i32         ┆ i32         ┆ i32         ┆ i32         │
 ╞═══════════╪═══════╪════════╪═════════╪═══╪═════════════╪═════════════╪═════════════╪═════════════╡
-│ ♕NGDTrue♕ ┆ 25    ┆ 13     ┆ 3       ┆ … ┆ 0           ┆ 0           ┆ 21          ┆ 6           │
-│ 琵琶朗朗  ┆ 21    ┆ 13     ┆ 9       ┆ … ┆ 2           ┆ 2           ┆ 21          ┆ 7           │
-│ 富 睿 控  ┆ 20    ┆ 17     ┆ 7       ┆ … ┆ 0           ┆ 2           ┆ 21          ┆ 6           │
+│ 玩家A ┆ 25    ┆ 13     ┆ 3       ┆ … ┆ 0           ┆ 0           ┆ 21          ┆ 6           │
+│ 玩家B  ┆ 21    ┆ 13     ┆ 9       ┆ … ┆ 2           ┆ 2           ┆ 21          ┆ 7           │
+│ 玩家C  ┆ 20    ┆ 17     ┆ 7       ┆ … ┆ 0           ┆ 2           ┆ 21          ┆ 6           │
 └───────────┴───────┴────────┴─────────┴───┴─────────────┴─────────────┴─────────────┴─────────────┘
 
 === STATS dtypes ===
@@ -54,16 +54,16 @@ shape: (11, 4)
 │ ---               ┆ ---               ┆ ---               ┆ ---            │
 │ u64               ┆ str               ┆ str               ┆ str            │
 ╞═══════════════════╪═══════════════════╪═══════════════════╪════════════════╡
-│ 76561*****669 ┆ LecW1nd           ┆ terrorist         ┆ null           │
-│ 76561*****651 ┆ Unin              ┆ terrorist         ┆ null           │
-│ 76561*****428 ┆ 一条想fly的肥鱼   ┆ terrorist         ┆ null           │
-│ 76561*****137 ┆ 琵琶朗朗          ┆ terrorist         ┆ null           │
-│ 76561*****383 ┆ Triangulation     ┆ terrorist         ┆ null           │
+│ <steamid> ┆ 玩家D           ┆ terrorist         ┆ null           │
+│ <steamid> ┆ 玩家E              ┆ terrorist         ┆ null           │
+│ <steamid> ┆ 玩家F   ┆ terrorist         ┆ null           │
+│ <steamid> ┆ 玩家B          ┆ terrorist         ┆ null           │
+│ <steamid> ┆ 玩家G     ┆ terrorist         ┆ null           │
 │ …                 ┆ …                 ┆ …                 ┆ …              │
-│ 76561*****121 ┆ 76561*****121 ┆ counter-terrorist ┆ null           │
-│ 76561*****533 ┆ ZKKKKK            ┆ counter-terrorist ┆ null           │
-│ 76561*****331 ┆ DokiDoki          ┆ counter-terrorist ┆ null           │
-│ 76561*****415 ┆ ♕NGDTrue♕         ┆ counter-terrorist ┆ null           │
+│ <steamid> ┆ <steamid> ┆ counter-terrorist ┆ null           │
+│ <steamid> ┆ 玩家H            ┆ counter-terrorist ┆ null           │
+│ <steamid> ┆ 玩家I          ┆ counter-terrorist ┆ null           │
+│ <steamid> ┆ 玩家A         ┆ counter-terrorist ┆ null           │
 │ 0                 ┆ DemoRecorder      ┆ null              ┆ null           │
 └───────────────────┴───────────────────┴───────────────────┴────────────────┘
 
@@ -76,7 +76,7 @@ shape: (1, 37)
 │ i32        ┆ ---        ┆ u64        ┆ str        ┆   ┆ str        ┆          ┆ bool      ┆      │
 │            ┆ u32        ┆            ┆            ┆   ┆            ┆          ┆           ┆      │
 ╞════════════╪════════════╪════════════╪════════════╪═══╪════════════╪══════════╪═══════════╪══════╡
-│ 283        ┆ 972        ┆ 76561*****533 ┆ ZKKKKK     ┆ … ┆ head       ┆ false    ┆ false     ┆ 2711 │
+│ 283        ┆ 972        ┆ <steamid> ┆ 玩家H     ┆ … ┆ head       ┆ false    ┆ false     ┆ 2711 │
 │            ┆            ┆ *****       ┆            ┆   ┆            ┆          ┆           ┆      │
 └────────────┴────────────┴────────────┴────────────┴───┴────────────┴──────────┴───────────┴──────┘
 

@@ -2,7 +2,7 @@
 import sys, time, json
 sys.stdout.reconfigure(encoding="utf-8")
 from awpy import Demo
-p = r"D:\dsh工作区1\cs2-demo-analyzer\数据\demos\match730_003831016083200933917_0573296683_401.dem"
+p = r"<项目根目录>\数据\demos\example.dem"
 t0=time.perf_counter(); d=Demo(p); r=d.rounds; t1=time.perf_counter()
 print("open+rounds:", round(t1-t0,3))
 import polars as pl

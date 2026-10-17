@@ -1,15 +1,15 @@
 import sys, bisect
-sys.path.insert(0, r"D:\dsh工作区1\cs2-demo-analyzer")
+sys.path.insert(0, r"<项目根目录>")
 from awpy import Demo
 from app import parser
-DEMO = r"D:\Steam\steamapps\common\Counter-Strike Global Offensive\game\csgo\replays\match730_003831016083200933917_0573296683_401.dem"
+DEMO = r"D:\Steam\steamapps\common\Counter-Strike Global Offensive\game\csgo\replays\example.dem"
 d = Demo(DEMO)
 rounds = parser.records(d.rounds)
 kills = parser.records(d.kills)
 stats = parser.records(d.stats)
 
 target = [s for s in stats if s["name"].startswith("Triang")][0]
-print("Triangulation:", target["steamid"], "kills", target["kills"], "multikill awpy",
+print("玩家G:", target["steamid"], "kills", target["kills"], "multikill awpy",
       target["multikill_2k"], target["multikill_3k"])
 
 print("\nround windows (round_num, start, end, official_end, knife):")
@@ -18,7 +18,7 @@ for r in rounds:
           (r["round_num"], r["start_tick"], r["end_tick"], r["official_end_tick"], r["is_knife_round"],
            r["winner_side"], r["reason_name"]))
 
-print("\nTriangulation kills:")
+print("\n玩家G kills:")
 for k in kills:
     if k["attacker_steamid"] == target["steamid"]:
         print("  tick=%-7d victim=%-18s weapon=%-14s hs=%s" % (k["tick"], (k["victim_name"] or "")[:18], k["weapon"], k["headshot"]))

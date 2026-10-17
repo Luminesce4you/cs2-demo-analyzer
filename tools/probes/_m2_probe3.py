@@ -2,7 +2,7 @@
 import json, sqlite3, sys
 from collections import Counter
 sys.stdout.reconfigure(encoding="utf-8")
-conn = sqlite3.connect(r"D:\dsh工作区1\cs2-demo-analyzer\数据\panel.db")
+conn = sqlite3.connect(r"<项目根目录>\数据\panel.db")
 conn.row_factory = sqlite3.Row
 mid = conn.execute("SELECT id FROM matches LIMIT 1").fetchone()["id"]
 def ds(n):

@@ -1,6 +1,6 @@
 import json, os, sqlite3, sys, time
-sys.path.insert(0, r"D:\dsh工作区1\cs2-demo-analyzer")
-DB = r"D:\dsh工作区1\cs2-demo-analyzer\数据\panel.db"
+sys.path.insert(0, r"<项目根目录>")
+DB = r"<项目根目录>\数据\panel.db"
 con = sqlite3.connect(DB)
 con.row_factory = sqlite3.Row
 mid = con.execute("select id from matches limit 1").fetchone()["id"]
@@ -13,9 +13,9 @@ for (name,) in con.execute("select name from datasets where match_id=? order by 
     print("    " + ", ".join(cols))
 con.close()
 
-os.environ["AWPY_DATA_DIR"] = r"D:\dsh工作区1\cs2-demo-analyzer\mapdata"
+os.environ["AWPY_DATA_DIR"] = r"<项目根目录>\mapdata"
 from awpy import Demo
-P = r"D:\dsh工作区1\cs2-demo-analyzer\数据\demos\match730_003831016083200933917_0573296683_401.dem"
+P = r"<项目根目录>\数据\demos\example.dem"
 t0 = time.time(); d = Demo(P); rd = d.rounds
 print("open+rounds %.3fs" % (time.time() - t0))
 rlist = list(rd.iter_rows(named=True))

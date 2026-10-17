@@ -47,7 +47,7 @@ def multikills(kills: Iterable[dict], rounds: Iterable[dict]) -> dict[str, dict[
         if not attacker:
             continue
         # 排除友军击杀：awpy 的 stats 也不计，否则多杀数会偏大
-        # （M0 实测：Triangulation 因一个 teamkill 从 3 个 2K 被算成 4 个）。
+        # （M0 实测：玩家G 因一个 teamkill 从 3 个 2K 被算成 4 个）。
         a_side, v_side = norm_side(kill.get("attacker_side")), norm_side(kill.get("victim_side"))
         if a_side and a_side == v_side:
             continue

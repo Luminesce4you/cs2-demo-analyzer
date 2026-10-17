@@ -7,7 +7,7 @@ ROOT = Path(__file__).resolve().parents[2]
 DIST = ROOT / "dist" / "CS2数据面板"
 EXE = DIST / "CS2数据面板.exe"
 LOG = DIST / "日志.txt"
-DEMO = ROOT / "数据" / "demos" / "match730_003831016083200933917_0573296683_401.dem"
+DEMO = ROOT / "数据" / "demos" / "example.dem"
 EDGE = r"C:\Program Files (x86)\Microsoft\Edge\Application\msedge.exe"
 SHOTS = ROOT / "shots"
 

@@ -6,7 +6,7 @@ from pathlib import Path
 ROOT = Path(__file__).resolve().parents[2]
 DIST = ROOT / "dist" / "CS2数据面板"
 PYEXE = DIST / "runtime" / "python.exe"
-DEMO = ROOT / "数据" / "demos" / "match730_003831016083200933917_0573296683_401.dem"
+DEMO = ROOT / "数据" / "demos" / "example.dem"
 PORT = 8799
 BASE = "http://127.0.0.1:%d" % PORT
 

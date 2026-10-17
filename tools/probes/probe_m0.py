@@ -1,7 +1,7 @@
 import json, sys, time, traceback
 from awpy import Demo
 
-DEMO = r'D:\Steam\steamapps\common\Counter-Strike Global Offensive\game\csgo\replays\match730_003831016083200933917_0573296683_401.dem'
+DEMO = r'D:\Steam\steamapps\common\Counter-Strike Global Offensive\game\csgo\replays\example.dem'
 
 t0 = time.time()
 d = Demo(DEMO)

@@ -2,7 +2,7 @@
 import json, sys, time, urllib.request
 
 BASE = "http://127.0.0.1:8765"
-DEMO = r"D:\Steam\steamapps\common\Counter-Strike Global Offensive\game\csgo\replays\match730_003831016083200933917_0573296683_401.dem"
+DEMO = r"D:\Steam\steamapps\common\Counter-Strike Global Offensive\game\csgo\replays\example.dem"
 
 def get(path):
     with urllib.request.urlopen(BASE + path, timeout=180) as r:

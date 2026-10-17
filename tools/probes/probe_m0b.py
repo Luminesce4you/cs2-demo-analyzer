@@ -1,9 +1,9 @@
 import sys, os, json, io
 from awpy import Demo
 import awpy.data as ad
-OUT = open(r'D:\dsh工作区1\cs2-demo-analyzer\m0_report.txt','w',encoding='utf-8')
+OUT = open(r'<项目根目录>\m0_report.txt','w',encoding='utf-8')
 def P(*a): print(*a, file=OUT)
-DEMO = r'D:\Steam\steamapps\common\Counter-Strike Global Offensive\game\csgo\replays\match730_003831016083200933917_0573296683_401.dem'
+DEMO = r'D:\Steam\steamapps\common\Counter-Strike Global Offensive\game\csgo\replays\example.dem'
 d = Demo(DEMO)
 P('=== STATS (3 rows, key cols) ===')
 cols = ['name','kills','deaths','assists','adr','kast','headshot_pct','opening_kills','opening_deaths','multikill_2k','multikill_3k','clutches_played','clutches_won','clutch_1v1','utility_damage','flash_assists','traded_deaths','rounds_played','headshot_kills']
